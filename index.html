@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Sanhita's Portfolio</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href = "index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href = "about.html">About</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href = "file:///C:/Users/sanhi/Downloads/SanhitaKumari_Resume.pdf">Resume</a>
+                    </div>
+                </div>
+                
+                
+                <div class="right">
+                    <div class="brand">
+                        <div>Sanhita Kumari</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+                    <div class="portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style="background-image: url(images/github.jpg)"></div>
+
+                        <div class = "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <!--<img src= "images/logos/git.png">-->
+                            </div>
+
+                            <div class = "subtitle">
+                                All github projects starting 2019.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style="background-image: url(images/work.jpg)"></div>
+
+                        <div class = "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <!--<img src= "images/logos/git.png">-->
+                            </div>
+
+                            <div class = "subtitle">
+                                Work experience through jobs and internships.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style="background-image: url(images/orgs.jpg)"></div>
+
+                        <div class = "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <!--<img src= "images/logos/git.png">-->
+                            </div>
+
+                            <div class = "subtitle">
+                                Organizations and teams I have been a part of.
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            });
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            });
+            
+        });
+
+
+    </script>
+</html>
