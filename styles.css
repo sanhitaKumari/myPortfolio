@@ -1,10 +1,13 @@
 .body {
     margin: 0px;
+    /* height: 100%; */
 }
 
 .container {
     display: grid;
     grid-template-columns: 1 fr;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Nav styles*/
@@ -63,6 +66,8 @@
 /*Portfolio*/
 
 .portfolio-items-wrapper {
+    position: relative;
+    top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -79,6 +84,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: black;
 }
 
 .img-text-wrapper {
@@ -125,32 +131,242 @@
 }
 
 /*About Page*/
+
+
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: black;
+    height: 100%;
+    background-image: url("images/prod.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+
 }
 
+.two-column-wrapper:after { 
+    filter:brightness(30%);
+  }
+
 .two-column-wrapper img {
-    width: 70%;
+    position: relative;
+    width: 50%;
     border-radius: 50px;
     align-items: center;
     background-color: black;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    object-fit: cover;
+    left : 70px;
+    background-color: black;
+    padding: 20px;
+    margin: 100px;
 }
 
 .profile-content-wrapper h1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
     display:flex;
     font-family: 'Source Code Pro', monospace;
     color: aquamarine;
     text-align: left;
+    background-color: black;
+    width: 300px;
+    border: 15px solid aquamarine;
+    padding: 50px;
+    margin: 20px;
 }
 
 
 .profile-content-wrapper p {
+    position: relative;
+    top: 150px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
-    
+    background-color: black;
+    width: 500px;
+    border: 5px solid aquamarine;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*Work Page*/
+
+.some-row-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.two-column1-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    border-bottom: 5px solid black;
+
+}
+
+.text-content h1 {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    display:flex;
+    font-family: 'Source Code Pro', monospace;
+    color: aquamarine;
+    text-align: left;
+    background-color: black;
+    width: 200px;
+    border: 10px solid aquamarine;
+    padding: 20px;
+    margin: 10px;
 }
 
 
+.text-content p {
+    position: relative;
+    top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 500px;
+    border: 5px solid aquamarine;
+    padding: 20px;
+    margin: 10px;
+}
+
+.image-content img {
+    position: relative;
+    top: 10px;
+    background-color: black;
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.two-row-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-image: url("images/white.jpg");
+}
+
+.pics img {
+    float: left;
+    width:  250px;
+    height: 250px;
+    border-radius: 300px;
+    border: solid 5px black;
+    filter:blur(10px);
+}
+
+.pics p {
+    font-family: 'Source Code Pro', monospace;
+    color: aquamarine;
+    text-align: left;
+    background-color: black;
+    
+}
+
+.pics img:hover {
+    float: left;
+    width:  250px;
+    height: 250px;
+    border-radius: 300px;
+    filter:blur(0px);
+}
+
+.pic1 {
+    
+    position: relative;
+    left: 120px;
+    top: 10px;
+}
+
+.pic2 {
+    
+    position: relative;
+    left: 140px;
+    top: 10px;
+    
+}
+
+.pic3 {
+    
+    position: relative;
+    left: 160px;
+    top: 10px;
+}
+
+.pic4 {
+    
+    position: relative;
+    left: 200px;
+    top: 10px;
+    
+    
+}
+
+.pic5 {
+    
+    position: relative;
+    
+}
+
+.pic6 {
+    
+    position: relative;
+    left: 20px;
+    
+}
+
+.pic7 {
+   
+    position: relative;
+    left: 50px;
+    
+}
+
+.pic8 {
+    
+    position: relative;
+    left: 100px;
+    
+}
+
+.text {
+    background-image: url("images/aqua.jpg");
+    background-size:inherit;
+
+}
+
+.text p {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position:relative;
+    top: 50px;
+    left: 320px;
+    background:transparent;
+    width: 300px;
+    padding: 120px;
+    border: solid 30px white;
+    margin: 5px;
+    text-align: center;
+    text-decoration-color: black;
+}
